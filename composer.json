@@ -1,0 +1,40 @@
+{
+    "name": "webdna/commerce-filters",
+    "description": "filtering for commerce products",
+    "type": "craft-plugin",
+    "license": "proprietary",
+    "support": {
+        "email": "info@webdna.co.uk",
+        "issues": "https://github.com/webdna/commerce-filters/issues?state=open",
+        "source": "https://github.com/webdna/commerce-filters",
+        "docs": "https://github.com/webdna/commerce-filters",
+        "rss": "https://github.com/webdna/commerce-filters/releases.atom"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.3.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "webdna\\commerce\\filters\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "commerce-filters",
+        "name": "Commerce Filters",
+        "developer": "webdna",
+        "documentationUrl": "https://github.com/webdna/commerce-filters",
+        "class": "webdna\\commerce\\filters\\CommerceFilters"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
